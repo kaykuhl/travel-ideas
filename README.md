@@ -5,7 +5,7 @@ This travel idea tracker is a mobile app project that was built on the  Ionic Fr
 ## Deployed App
 
 The application was deployed using FireBase - View the deployed app:
-[https://travelideas-b8f56.firebaseapp.com/home](https://travelideas-b8f56.firebaseapp.com/home)
+[https://travelideas-b8f56.firebaseapp.com](https://travelideas-b8f56.firebaseapp.com)
 
 ## Instructions
 

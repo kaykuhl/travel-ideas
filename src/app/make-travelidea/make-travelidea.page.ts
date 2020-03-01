@@ -20,7 +20,7 @@ export class MakeTravelideaPage implements OnInit {
 
   ngOnInit() {
     this.travelForm = this.fb.group({
-      location: [''],
+      location: ['location'],
       detail: [''],
     
     })
