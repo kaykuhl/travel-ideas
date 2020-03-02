@@ -21,8 +21,13 @@ export class MakeTravelideaPage implements OnInit {
   ngOnInit() {
     this.travelForm = this.fb.group({
       location: [''],
+      date: [''],
+      dayOfWeek: [''],
       detail: [''],
-      
+      morning: [''],
+      afternoon: [''],
+      evening: [''],
+      night: ['']
     })
   }
 

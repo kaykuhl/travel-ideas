@@ -28,7 +28,13 @@ export class EditTravelideaPage implements OnInit {
   ngOnInit() {
     this.updateTravelForm = this.fb.group({
       location: [''],
+      date: [''],
+      dayOfWeek: [''],
       detail: [''],
+      morning: [''],
+      afternoon: [''],
+      evening: [''],
+      night: ['']
     })
     console.log(this.updateTravelForm.value)
   }

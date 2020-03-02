@@ -16,7 +16,13 @@ export class TravelideaService {
   createTravel(ti: Travelidea) {
     return this.travelListRef.push({
       location: ti.location,
-      detail: ti.detail
+      date: ti.date,
+      dayOfWeek: ti.dayOfWeek,
+      detail: ti.detail,
+      morning: ti.morning,
+      afternoon: ti.afternoon,
+      evening: ti.evening,
+      night: ti.night
           })
   }
 
@@ -36,7 +42,13 @@ export class TravelideaService {
   updateTravel(id, ti: Travelidea) {
     return this.travelRef.update({
       location: ti.location,
-      detail: ti.detail
+      date: ti.date,
+      dayOfWeek: ti.dayOfWeek,
+      detail: ti.detail,
+      morning: ti.morning,
+      afternoon: ti.afternoon,
+      evening: ti.evening,
+      night: ti.night
     })
   }
 

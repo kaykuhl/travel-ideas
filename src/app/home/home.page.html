@@ -1,16 +1,16 @@
 <ion-header>
   <ion-toolbar>
     <ion-title class="title">
-      <ion-icon name="airplane-outline"></ion-icon> Travel Idea App
+      <ion-icon name="airplane-outline"></ion-icon> Travel Itinerary
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-list class="ios list-ios hydrated">
-    <ion-list-header class="ios hydrated">
-      Travel Ideas
-    </ion-list-header>
+    <!-- <ion-list-header class="ios hydrated">
+      Travel Itinerary
+    </ion-list-header> -->
 
     <ion-item *ngFor="let travel of Travels" class="user-list">
       <ion-label>
@@ -18,8 +18,27 @@
           <ion-icon name="map-outline"></ion-icon> {{travel.location}}
         </h5>
         <p>
-          <ion-icon name="arrow-forward-outline"></ion-icon> {{travel.detail}}
+          <ion-icon name="today-outline"></ion-icon>
+         {{travel.date}} - {{travel.dayOfWeek}}
         </p>
+        <p>
+          <ion-icon name="arrow-forward-outline"></ion-icon>{{travel.detail}}
+        </p>
+        <p>
+          <ion-icon name="alarm-outline"></ion-icon> <b>Morning:</b> {{travel.morning}}
+        </p>
+        <p>
+          <ion-icon name="sunny-outline"></ion-icon> <b>Afternoon:</b> {{travel.afternoon}}
+        </p>
+        <p>
+          <ion-icon name="partly-sunny-outline"></ion-icon> <b>Evening:</b> {{travel.evening}}
+        </p>
+        <p>
+          <ion-icon name="moon-outline"></ion-icon> <b>Night:</b> {{travel.night}}
+        </p>
+
+
+
       </ion-label>
 
       <div class="item-note" item-end>
