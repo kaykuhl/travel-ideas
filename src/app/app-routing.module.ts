@@ -11,7 +11,11 @@ const routes: Routes = [
   {
     path: 'edit-travelidea/:id',
     loadChildren: () => import('./edit-travelidea/edit-travelidea.module').then( m => m.EditTravelideaPageModule)
+  },  {
+    path: 'make-trip',
+    loadChildren: () => import('./pages/make-trip/make-trip.module').then( m => m.MakeTripPageModule)
   },
+
 ];
 
 @NgModule({
