@@ -29,7 +29,7 @@ export class TravelideaService {
   // Get Single
   getTravel(id: string) {
     this.travelRef = this.db.object('/travelidea/' + id);
-    return this.travelListRef;
+    return this.travelRef;
   }
 
   // Get List
