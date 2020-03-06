@@ -1,6 +1,6 @@
 export class Travelidea {
     $key: string;
-    tripID: string;
+    // tripID: string;
     location: string;
     detail: string;
     date: Date;

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Trip } from '../shared/trip';
+import { Trip } from '../shared/Trip';
 import { AngularFireDatabase, AngularFireList, AngularFireObject } from '@angular/fire/database';
 
 @Injectable({
@@ -24,7 +24,7 @@ export class TripService {
   // Get Single
   getTrip(id: string) {
     this.tripRef = this.db.object('/trip/' + id);
-    return this.tripListRef;
+    return this.tripRef;
   }
 
   // Get List
