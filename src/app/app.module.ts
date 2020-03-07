@@ -19,6 +19,9 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from '../environments/environment';
 import { ServiceWorkerModule } from '@angular/service-worker';
 
+import { AuthenticationService } from "./../app/shared/auth.service";
+import { AngularFirestore } from 'angularfire2/firestore';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -36,8 +39,11 @@ import { ServiceWorkerModule } from '@angular/service-worker';
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
-  ],
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    AngularFirestore
+  ,
+  AuthenticationService],
+
   bootstrap: [AppComponent]
 })
 
