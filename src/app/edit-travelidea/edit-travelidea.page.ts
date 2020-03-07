@@ -42,7 +42,7 @@ export class EditTravelideaPage implements OnInit {
   updateForm() {
     this.aptService.updateTravel(this.id, this.updateTravelForm.value)
       .then(() => {
-        this.router.navigate(['/home']);
+        this.router.navigate(['/dashboard']);
       })
       .catch(error => console.log(error));
   }

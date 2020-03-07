@@ -45,6 +45,8 @@ import { AngularFirestore } from 'angularfire2/firestore';
   AuthenticationService],
 
   bootstrap: [AppComponent]
+
+
 })
 
 export class AppModule { }
