@@ -38,7 +38,7 @@ export class MakeTravelideaPage implements OnInit {
       this.aptService.createTravel(this.travelForm.value).then(res => {
         console.log(res)
         this.travelForm.reset();
-        this.router.navigate(['/home']);
+        this.router.navigate(['/dashboard']);
       })
         .catch(error => console.log(error));
     }

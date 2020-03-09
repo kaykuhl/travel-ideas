@@ -22,7 +22,7 @@ export class SignupPage implements OnInit {
     .then((res) => {
       // Do something here
       this.authService.SendVerificationMail()
-      this.router.navigate(['verify-email']);
+      this.router.navigate(['dashboard']);
     }).catch((error) => {
       window.alert(error.message)
     })
